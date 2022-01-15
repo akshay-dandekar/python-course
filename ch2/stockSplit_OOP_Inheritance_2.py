@@ -32,21 +32,28 @@ class NamedStockUser(StockUser):
         name = self.user.getName()
         print(f"[USR{self.usrNbr}: {name}] {preText} stock split, face value: {self.faceValue} | nbr shares: {self.nbrShares} | total value: {totalValue}")
 
-user1 = User("Akshay", "Dandekar", 29, "Sadashiv Peth")
+print(__name__)
+if __name__ == "__main__":
+    user1 = User("Akshay", "Dandekar", 29, "Sadashiv Peth")
 
-user2 = User("Nilika", "Joshi", 24, "Upper")
+    user2 = User("Nilika", "Joshi", 24, "Upper")
+    print(user2.getName())
 
-usr1 = NamedStockUser(1, user2, 10, 1000)
-usr1.print_share_data("Before")
-usr1.splitStock()
-usr1.print_share_data("After")
 
-usr2 = StockUser(2, 5, 40)
-usr2.print_share_data("Before")
-usr2.splitStock()
-usr2.print_share_data("After")
+    usr6 = NamedStockUser(6, User("Vidya", "Patil",34, "some"), 10, 1000)
+    usr6.print_share_data("Testing1234")
 
-usr3 = StockUser(3, 7.5, 4000)
-usr3.print_share_data("Before")
-usr3.splitStock()
-usr3.print_share_data("After")
+    usr1 = NamedStockUser(1, user2, 10, 1000)
+    usr1.print_share_data("Before")
+    usr1.splitStock()
+    usr1.print_share_data("After")
+
+    usr2 = StockUser(2, 5, 40)
+    usr2.print_share_data("Before")
+    usr2.splitStock()
+    usr2.print_share_data("After")
+
+    usr3 = StockUser(3, 7.5, 4000)
+    usr3.print_share_data("Before")
+    usr3.splitStock()
+    usr3.print_share_data("After")

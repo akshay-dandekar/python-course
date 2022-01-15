@@ -22,6 +22,8 @@ class NamedStockUser(StockUser):
         print(f"[USR{self.usrNbr}: {self.name}] {preText} stock split, face value: {self.faceValue} | nbr shares: {self.nbrShares} | total value: {totalValue}")
 
 usr1 = NamedStockUser(1, "Akshay", 10, 1000)
+usr5 = usr1
+usr5.print_share_data("Testing")
 usr1.print_share_data("Before")
 usr1.splitStock()
 usr1.print_share_data("After")
@@ -35,3 +37,7 @@ usr3 = StockUser(3, 7.5, 4000)
 usr3.print_share_data("Before")
 usr3.splitStock()
 usr3.print_share_data("After")
+
+
+
+StockUser(5,20,20).print_share_data("Direct")
