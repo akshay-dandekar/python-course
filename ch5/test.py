@@ -1,0 +1,4 @@
+﻿import os
+import sys
+
+os.write(sys.stdout.fileno(), b'\xed\xed\x00\x00\x00\x00\x00\x00\x00\x00')

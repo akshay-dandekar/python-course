@@ -4,9 +4,6 @@ strJson = "{ \"name\": \"Aks\\\"hay\", \"lastname\": \"Dandekar\" }"
 
 strJson = '{ "fullname": { "name": "Akshay", "surname": "dandekar" }, "age": 29 }'
 
-
-
-
 print(strJson)
 
 
